@@ -29,6 +29,9 @@ It's essential to ensure that the dataset is balanced and representative of real
 
 ## Model Architecture
 
+![image](https://github.com/01saurabhshukla/Crime-Scene-Prediction/assets/88873969/89914069-dc27-4815-8248-0e092d860913)
+
+
 The Crime Scene Detection model follows the LRCN (Long-term Recurrent Convolutional Networks) architecture, which is designed to process sequential data such as videos. The architecture consists of two main parts:
 
 1. **Convolutional Neural Network (CNN)**: The CNN part is responsible for extracting spatial features from images or video frames. It can be based on well-known CNN architectures like VGG, ResNet, or MobileNet, or a custom-designed CNN.
