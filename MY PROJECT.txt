@@ -1,0 +1,52 @@
+1. what is temporal aspect of data ?
+=> The temporal aspect of data refers to the time dimension or the chronological order of events or observations within the data. It involves understanding how data changes over time and how those changes can impact analysis and decision-making.
+
+Temporal data can be in the form of time-series data, which consists of a sequence of observations that are recorded at regular intervals over time. Examples of time-series data include stock prices, weather measurements, or website traffic statistics.
+
+Temporal data analysis involves various techniques such as time-series forecasting, trend analysis, seasonality analysis, and anomaly detection. It is crucial in many fields, including finance, economics, marketing, and scientific research, where understanding and modeling the temporal aspect of data can lead to better insights and predictions.
+
+2. what is spatial information ?
+=> Spatial information refers to any data or information that is related to a specific location or geographic area. It involves identifying the location, shape, size, and relationships between different objects or features on the Earth's surface.
+
+Spatial information can be represented in various formats, such as maps, satellite images, aerial photographs, and geographic information systems (GIS). It is used in a wide range of applications, including urban planning, environmental management, transportation, emergency response, and natural resource management.
+
+Some examples of spatial information include:
+
+Land Use Maps: These maps depict the various land uses such as residential, commercial, industrial, and agricultural areas in a region.
+
+Topographic Maps: These maps represent the physical features of the land surface such as mountains, valleys, and rivers, and can be used for navigation, planning, and resource management.
+
+3. what is vanishing gradient ?
+=> Vanishing gradient is a problem that can occur in deep neural networks during the process of backpropagation, which is used to update the weights of the network during training.
+
+During backpropagation, the gradients of the loss function with respect to the network's parameters are computed and used to update the weights. In deep neural networks with many layers, the gradients can become very small as they are propagated backward through the network. This can lead to the problem of vanishing gradient, where the gradients become so small that they effectively "vanish" or disappear, resulting in very slow convergence or even preventing convergence altogether.
+
+The vanishing gradient problem is particularly common in networks with activation functions such as sigmoid or hyperbolic tangent, which have a saturation effect as the inputs become large or small. In such cases, the gradients can become very small as the inputs to the activation function move away from the linear region.
+
+Several techniques have been proposed to mitigate the vanishing gradient problem, including using different activation functions such as ReLU, initializing the weights appropriately, and using batch normalization. These techniques can help to stabilize the gradients and prevent them from vanishing, allowing for more effective training of deep neural networks.
+
+4. how to lstm is solving problem of vanishing gradient descent ?
+=> LSTM (Long Short-Term Memory) is a type of recurrent neural network (RNN) that is designed to address the vanishing gradient problem in traditional RNNs.
+
+The main idea behind LSTMs is to introduce memory cells that allow the network to selectively remember or forget information over time. These memory cells are controlled by three gates: the input gate, the forget gate, and the output gate.
+
+During the forward pass of the network, the input gate decides which new information should be added to the memory cell, the forget gate decides which information should be forgotten, and the output gate decides which information should be used for the prediction. These gates are trained through backpropagation to learn which information to keep and which to discard, based on the context and input data.
+
+By introducing these memory cells and gates, LSTMs can selectively store and retrieve information over long time periods, allowing them to effectively handle long-term dependencies in data. This helps to mitigate the vanishing gradient problem, as the gradients can flow through the memory cells and gates without being significantly attenuated over time.
+
+In summary, LSTMs are able to solve the problem of vanishing gradient descent in RNNs by selectively storing and retrieving information over long periods of time through the use of memory cells and gates, which allow gradients to flow through the network without being significantly attenuated.
+
+5. %%capture
+=>IPython has a cell magic, %%capture, which captures the stdout/stderr of a cell. With this magic you can discard these streams or store them in a variable.
+
+In [1]:
+from __future__ import print_function
+import sys
+By default, %%capture discards these streams. This is a simple way to suppress unwanted output.
+
+6. How to bypass certificate verification in wget?
+The quickest way round this, albeit not the safest, is to tell wget to ignore any certificate checks and download the file. To do this, add the –no-check-certificate to your wget command.
+
+
+
+convolution layers are filters and there task is to obtain features
